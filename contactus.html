@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 
-<head>
-
-    <title>Books-R-Us: Contact Us</title>
-    <!-- Required meta tags always come first -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 <body>
-
-
+    <center>
+        <ul>
+            <li class="navbar-item"><a href="./index.html" target="_parent">Home</a></li>
+            <li class="navbar-item"><a href="./login.html" target="_parent">Login</a></li>
+            <li class="navbar-item"><a href="./catalog_page.html">Catalog</a></li>
+            <li class="navbar-item"><a href="./aboutus.html" target="_parent">About</a></li>
+            <li class="navbar-item"><a href="./contactus.html" target="_parent">Contact</a></li>
+        </ul>
+    </center>
+<head><title>Books-R-Us: Contact</title></head>
+    
     <header>
         <marquee><p><i>Coming soon to locations near you</i></p></marquee>
     </header>
+     
+    <img src="images/shelved_books.png" style="float:right;">
+    <div class="jumbotron">
+                <h1>Books-R-Us: Contact</h1>
+                <hr>
+                <p>Books for everyone! The one stop book store for you. Browse our special catalogs to view our books. Read an excerpt and add to cart!</p>
+    </div>
 
-    <div>
-        <div class="jumbotron">
-               <h1>Contact Us</h1>
-        </div>
+
+<body>
+   
 
         <div class="row row-content">
            <div>
@@ -50,67 +60,84 @@
         </div>
 
         <div class="row row-content">
+            <center>
            <div class="col-12">
+               
               <h3>Send us your Feedback</h3>
            </div>
             <div>
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div>
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                        </div>
+                <form name="contact-us-form" id="contact-us-form" >
+                    <div class="row">
+                        <label for="firstname">First Name</label>
+                            <input type="text"\id="firstname" name="firstname">
                     </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div>
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                        </div>
+                    <div class="row">
+                        <label>Last Name</label>
+                    
+                            <input type="text"id="lastname" name="lastname">
+                        <br><br>
                     </div>
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div>
-                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                        </div>
-                        <div>
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
-                        </div>
+                    <div class="row">
+                        <label>Contact Tel.</label>
+                        
+                            <input type="tel" id="areacode" size="5" name="areacode">
+                        
+                            <input type="tel" id="telnum" name="telnum">
+                            <br><br>
+                        
                     </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                        </div>
+                    <div>
+                        <label for="emailid" >Email</label>
+                        
+                            <input type="email" id="emailid" name="emailid">
+                            <br><br>
+                        
                     </div>
-                    <div class="form-group row">
+                    <div>
                         <div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contact you></strong>
-                                </label>
+                                <strong>How may we contact you?</strong>
+                                <input type="checkbox" id="telnum-checkbox">
+                                <label>Telephone</label>
+                                <input type="checkbox" id="email-checkbox">
+                                <label>Email</label>
                             </div>
                         </div>
-                        <div>
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+
+                    <!--form action="/action_page.php"--->
+                        <p>Rate us! How many stars would you give us?</p>
+                        <input type="radio" id="rate-us" name="rate-us">
+                        <label for="1">1</label>
+                        <input type="radio" id="rate-us" name="rate-us">
+                        <label for="2">2</label>
+                        <input type="radio" id="rate-us" name="rate-us">
+                        <label for="3">3</label>
+                        <input type="radio" id="rate-us" name="rate-us">
+                        <label for="4">4</label>
+                        <input type="radio" id="rate-us" name="rate-us">
+                        <label for="5">5</label><br><br>
+
+
+                        <label for="feedback">Your Feedback</label>
                         <div>
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                            <textarea id="feedback" name="feedback" rows="12"></textarea>
                         </div>
-                    </div>
+                
                     <div class="form-group row">
                         <div>
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            <button type="button" onclick="validateContactForm()">Send Feedback</button>
                         </div>
                     </div>
                 </form>
+                <p id="firstnameAlertID"></p>
+                <p id="lastnameAlertID"></p>
+                <p id="telnumAlertID"></p>
+                <p id="emailAlertID"></p>
+                <p id="checkboxAlertID"></p>
+                <p id="radioAlertID"></p>
 
+            </center>
 
             </div>
        </div>
@@ -124,18 +151,18 @@
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./login.html">Login</a></li>
-                        <li><a href="./catalog.html">Catalog</a></li>
+                        <li><a href="./catalog_page.html">Catalog</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
-                    <h5>Our Address</h5>
+                    <h5>Our Address:</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
 		              Chennai, Tamil Nadu<br>
-		              India<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br><br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br><br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:books.r.us@gmail.com">books.r.us@gmail.com</a><br><br>
+		              India<br><br>
+		              <p>Phone Number 1: +852 1234 5678</p>
+		              <p>Phone Number 2: +852 8765 4321</p>
+		              <p>Email: <a href="mailto:books.r.us@gmail.com">books.r.us@gmail.com</a></p><br><br>
 		           </address>
                 </div>
                 <div>
@@ -154,6 +181,69 @@
                 </div>
         </div>
     </footer>
+    <script>
+        function validateContactForm() {
+            //validate name field name="firstname"
+            var firstname = document.forms["contact-us-form"]["firstname"].value;
+            var firstnameAlert="";
+            if (firstname == "") {
+                //alert("Name must be filled out");
+                firstnameAlert="Name field must be filled";
+            }
+            document.getElementById("firstnameAlertID").innerHTML = firstnameAlert;
+
+            //validate name field name="firstname"
+            var lastname = document.forms["contact-us-form"]["lastname"].value;
+            var lastnameAlert="";
+            if (lastname == "") {
+                //alert("Name must be filled out");
+                lastnameAlert="Name field must be filled";
+            }
+            document.getElementById("lastnameAlertID").innerHTML = lastnameAlert;
+
+            // validate phone number name="telnum"
+            var telnum, telnumAlert="";
+            telnum = parseInt(document.getElementById("telnum").value);
+            // check if it's a 10 digit number
+            if (telnum>999999999 && telnum<10000000000) {
+                telnum="";
+                
+            }else{
+                
+                telnumAlert = "Telephone field must be filled with 10 digits";
+            }
+            document.getElementById("telnumAlertID").innerHTML = telnumAlert;
+
+            //emailid
+            var emailAlert="";
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (document.getElementById("emailid").value.match(mailformat)){
+                emailAlert="Valid email address";
+            }else {
+                emailAlert="You have entered an invalid email address!";
+            }
+            document.getElementById("emailAlertID").innerHTML = emailAlert;
+
+            //checkbox
+            var checkboxAlert = "";
+            var telnumcheck = document.getElementById("telnum-checkbox").checked;
+            var emailcheck = document.getElementById("email-checkbox").checked;
+            if(!telnumcheck && !emailcheck){
+                checkboxAlert="Please select one option to contact you";
+            }
+            document.getElementById("checkboxAlertID").innerHTML = checkboxAlert;
+            
+            //radio
+            var radioOption = document.getElementById("rate-us").checked;
+            var radioAlert = "";
+            if(!radioOption){
+                radioAlert="Please rate us";
+            }else{ radioAlert=""; }
+            document.getElementById("radioAlertID").innerHTML = radioAlert;
+        }
+
+        
+        </script>
 </body>
 
 </html>
