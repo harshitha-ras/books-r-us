@@ -29,13 +29,15 @@
 
     <form >
         <br><br>
-        User ID : <input type="text" name="user_id" />
+        User ID : <input type="text" name="email" placeholder="Email"/>
         
         <br><br>
 
-        Password: <input type="password" name="password" />
+        Password: <input type="password" name="password" placeholder="Password"/>
         <br><br>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="btnLogin" class="btn btn-primary">Login</button>
+        <button id="btnSignuo" class="btn btn-primary">Sign up</button>
+        <button id="btnLogout" class="btn btn-primary">Log out</button>
     </form>
 
     <footer class="footer">
@@ -77,5 +79,32 @@
     </footer>
    
 </body>
+<script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB-tNZik592vSsxGSiTMOpY9MpjyfII56Y",
+      authDomain: "harshitha-r-books-r-us.firebaseapp.com",
+      databaseURL: "https://harshitha-r-books-r-us.firebaseio.com",
+      projectId: "harshitha-r-books-r-us",
+      storageBucket: "harshitha-r-books-r-us.appspot.com",
+      messagingSenderId: "269770616473",
+      appId: "1:269770616473:web:d4ed89b98625a0537a5208",
+      measurementId: "G-Z7EJ0VNZW2"
+    };
+    
+    firebase.initializeApp(config);
 
+    //Get elements
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const btnLogin = document.getElementById('btnLogin');
+    const btnSignup = document.getElementById('btnSignup');
+    const btnLogout = document.getElementById('btnLogout');
+
+    //Add login event
+    btnLogin.addEventListener('click',e=>{
+        
+    })
+        
+</script>
 </html>
