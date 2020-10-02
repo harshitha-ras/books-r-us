@@ -15,7 +15,7 @@
     </center>
 <head><title>Books-R-Us: Login</title></head>
     <header>
-        <marquee><p><i>Coming soon to locations near you</i></p></marquee>
+        <!--marquee><p><i>Coming soon to locations near you</i></p></marquee-->
     </header>
     
     <img src="images/shelved_books.png" style="float:right;">
@@ -27,16 +27,32 @@
 
 
 
-    <form >
+    <form method="post" action="loginform.php">
         <br><br>
-        User ID : <input type="text" name="user_id" />
+        User ID : <input type="text" name="email" />
         
         <br><br>
 
         Password: <input type="password" name="password" />
         <br><br>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <button type="submit" name ="btnLogin">Login</button>
+        
+        <!--div id="btnSignup">
+        <button onclick="login()" >Sign up</button>
+        </div>
+
+        <div id="btnLogout" class=hidden>
+            <button onclick="logout()">Log out</button>
+        </div-->
     </form>
+    <a href="signup.php">Signup</a>
+    <form action ="logout.php" method="post">
+        <button type="submit" name="btnLogout">Logout</button>
+    </form>
+
+    <p>You are logged in!</p>
+    <p>You are logged out</p>
 
     <footer class="footer">
         <div class="container">
@@ -77,5 +93,17 @@
     </footer>
    
 </body>
+<script>
+    function logout() {
+        document.getElementById("btnLogin").style.display="block";
+        document.getElementById("btnSignup").style.display = "block";
+        document.getElementById("btnLogout").style.display = "none";
+    }
+    function login() {
+        document.getElementById("btnLogin").style.display="none";
+        document.getElementById("btnSignup").style.display = "none";
+        document.getElementById("btnLogout").style.display = "block";
+    }
+</script>
 
 </html>
