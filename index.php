@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
     <!----meta name="viewport" content="width=device-width, initial-scale=1"---->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./navbar.css">
     <script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 
 <head><title>Books-R-Us</title></head>
 <body>
-    <center>
-    <ul>
-        <li class="navbar-item"><a href="./index.html">Home</a></li>
-        <li class="navbar-item"><a href="./login.html">Login</a></li>
-        <li class="navbar-item"><a href="./catalog_page.html">Catalog</a></li>
-        <li class="navbar-item"><a href="./aboutus.html">About</a></li>
-        <li class="navbar-item"><a href="./contactus.html">Contact</a></li>
-    </ul>
-</center>
+    <?php
+        require "navbar.php";
+    ?>
+    
     <header>
         <marquee><p><i>Coming soon to locations near you</i></p></marquee>
     </header>
@@ -97,15 +93,5 @@
     </footer>
 
 </body>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.21.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>   
 
 </html>

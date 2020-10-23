@@ -2,12 +2,12 @@
 <html >
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="css/styles.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 <body>
     <center>
         <ul>
-            <li class="navbar-item"><a href="./index.html" target="_parent">Home</a></li>
+            <li class="navbar-item"><a href="./index.php" target="_parent">Home</a></li>
             <li class="navbar-item"><a href="./login.html" target="_parent">Login</a></li>
             <li class="navbar-item"><a href="./catalog_page.html">Catalog</a></li>
             <li class="navbar-item"><a href="./aboutus.html" target="_parent">About</a></li>
@@ -66,10 +66,10 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div>
-                <form name="contact-us-form" id="contact-us-form" >
+                <form name="contact-us-form" id="contact-us-form" action="main.jsp">
                     <div class="row">
                         <label for="firstname">First Name</label>
-                            <input type="text"\id="firstname" name="firstname">
+                            <input type="text" id="firstname" name="firstname">
                     </div>
                     <div class="row">
                         <label>Last Name</label>
@@ -104,8 +104,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--form action="/action_page.php"--->
+                    
                         <p>Rate us! How many stars would you give us?</p>
                         <input type="radio" id="rate-us" name="rate-us" value="1">
                         <label for="1">1</label>
@@ -188,7 +187,7 @@
             var firstnameAlert="";
             if (firstname == "") {
                 //alert("Name must be filled out");
-                firstnameAlert="Name field must be filled";
+                firstnameAlert="First name field must be filled";
             }
             document.getElementById("firstnameAlertID").innerHTML = firstnameAlert;
 
@@ -197,7 +196,7 @@
             var lastnameAlert="";
             if (lastname == "") {
                 //alert("Name must be filled out");
-                lastnameAlert="Name field must be filled";
+                lastnameAlert="Last name field must be filled";
             }
             document.getElementById("lastnameAlertID").innerHTML = lastnameAlert;
 
@@ -241,18 +240,8 @@
             }else{ radioAlert=""; }
             document.getElementById("radioAlertID").innerHTML = radioAlert;
         }
-
-        
         </script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.21.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+        
 </body>
 
 </html>
