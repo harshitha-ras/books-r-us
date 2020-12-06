@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="./customer.xsl"?> 
+<cust_list>
+    <customer id = "40">
+        <firstname>Harshitha</firstname>
+        <lastname>Rasamsetty</lastname>
+        <residence>Chennai</residence>
+        <orderid>85</orderid>
+        <bill>200</bill>
+    </customer>
+    <customer id = "41">
+        <firstname>Shrish</firstname>
+        <lastname>Rasamsetty</lastname> 
+        <residence>Chennai</residence>
+        <orderid>86</orderid>
+        <bill>250</bill>
+    </customer>
+    <customer id = "42">
+        <firstname>John</firstname>
+        <lastname>Doe</lastname>
+        <residence>Chennai</residence>
+        <orderid>87</orderid>
+        <bill>300</bill>
+    </customer>
+    <customer id = "43">
+        <firstname>Jane</firstname>
+        <lastname>Doe</lastname>
+        <residence>Chennai</residence>
+        <orderid>88</orderid>
+        <bill>400</bill>
+    </customer>
+    <customer id = "44">
+        <firstname>Joanna</firstname>
+        <lastname>Doe</lastname>
+        <residence>Chennai</residence>
+        <orderid>89</orderid>
+        <bill>450</bill>
+    </customer>
+    <customer id = "45">
+        <firstname>Jason</firstname>
+        <lastname>Doe</lastname>
+        <residence>Chennai</residence>
+        <orderid>90</orderid>
+        <bill>200</bill>
+    </customer>
+</cust_list>

@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html>
     <!----meta name="viewport" content="width=device-width, initial-scale=1"---->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
     <script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 
 <head><title>Books-R-Us</title></head>
 <body>
-    <?php
-        require "navbar.php";
-    ?>
+    <nav>
+        <ul>
+            <li class="logo"><a class="active" href="./index.html"><img src="images/smiley_books.png" height="40" width="60"></a></li>
     
+            <li class="dropdown"><a href="catalog_page.html" class="dropbtn">Catalog</a>
+                <div class="dropdown-content">
+                    <a href="#">Popular</a>
+                    <a href="#">Best Selling</a>
+                    <a href="#">All</a>
+                </div>
+            </li>
+            <li><a href="./profile.html" id="profileTab" style="display:none;">Cart</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            <li class="navbar-item"><a href="./aboutus.html">About</a></li>
+            <li>
+            <div class="login">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </li>
+            
+            <li>
+                <!-- <div>
+                    <form action="./logoutAction.php">
+                        <button type="submit" id="btnLogout">Logout</button>
+                    </form>
+                </div> -->
+                <div class="login" id="btnLogin">
+                    <div id="btnSignup" style="display:inline;">
+                        <button ><a href="./signup.html">Signup</a></button>
+                    </div>
+                    <form action="./loginAction.php" style="display:inline;" method="post">
+                        <input type="text" name="emailLogin" id="emailLogin" placeholder="Username">
+                        <input type="text" name="passwordLogin" id="passwordLogin" placeholder="Password">
+                        <button id="btnLogin" name="btnLogin">Login</button>
+                    </form>
+                </div>
+                
+            </li>
+        </ul>
+    </nav>
+
     <header>
         <marquee><p><i>Coming soon to locations near you</i></p></marquee>
     </header>
@@ -55,43 +93,30 @@
     <iframe width="780" height="427" src="https://www.youtube.com/embed/4R8CB0QqTA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">             
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./catalog_page.html">Catalog</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
-                    </ul>
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Chennai, Tamil Nadu<br>
-		              India<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br><br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br><br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:books.r.us@gmail.com">books.r.us@gmail.com</a><br><br>
-		           </address>
-                </div>
-                <div>
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
-                    </div>
-                </div>
-           </div>         
-                <div>
-                    <p>© Copyright 2019 Books-R-Us</p>
-                </div>
-        </div>
+        <div class="row">
+            <div class="column" >
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    <li><a href="./catalog_page.html">Catalog</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column" >
+                <h5>Our Address</h5>
+                  121, Clear Water Bay Road<br>
+                  Chennai, Tamil Nadu<br>
+                  India<br>
+                  <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br><br>
+                  <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br><br>
+                  <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:books.r.us@gmail.com">books.r.us@gmail.com</a><br><br>
+            </div>
+        </div>        
+        <center><p>© Copyright 2019 Books-R-Us</p></center>
     </footer>
+   
 
-</body>
-
+</body>  
 </html>

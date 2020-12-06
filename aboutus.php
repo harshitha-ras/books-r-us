@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="navbar.css">
 <script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 
 <body>
-    
-    <center>
-        <ul>
-            <li class="navbar-item"><a href="./index.php">Home</a></li>
-            <li class="navbar-item"><a href="./login.html">Login</a></li>
-            <li class="navbar-item"><a href="./catalog_page.html">Catalog</a></li>
-            <li class="navbar-item"><a href="./aboutus.html">About</a></li>
-            <li class="navbar-item"><a href="./contactus.html">Contact</a></li>
-        </ul>
-    </center>
+    <?php
+    require "navbar.php";
+    ?>
 <head><title>Books-R-Us: About</title></head>
     <header>
         <marquee><p><i>Coming soon to locations near you</i></p></marquee>
@@ -90,10 +84,6 @@
                 
                 
                 <p><div class="d-none d-sm-block">Award winning author with wide International experience having worked closely with whos-who in the literary world, he specializes in creating mind-blowing Indo-Italian fusion experiences. He says, <em>Put together the authors from the two craziest cultures, and you get a winning hit! Amma Mia!</em></div></p>
-                
-
-            </div>
-       </div>
        <div class="row row-content">
            <div>
                <h2>Facts &amp; Figures</h2>
@@ -138,7 +128,8 @@
            </div>
        </div>
     </div>
-
+    </div>
+       </div>
     <footer class="footer">
         <div class="container">
             <div class="row">             

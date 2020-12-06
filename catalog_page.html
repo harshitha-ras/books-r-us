@@ -4,19 +4,11 @@
 <link rel="stylesheet" href="styles.css">
 <script src="https://kit.fontawesome.com/486ebc0d41.js" crossorigin="anonymous"></script>
 
-
-
-    <frameset cols = "200, *">
-        <frame src = "./catalog_left.html" name = "catalog_left" />
-        <frame src = "./catalog_right.html" name = "catalog_right" />
-        
-        <noframes>
-           <body>Your browser does not support frames.</body>
-        </noframes>
-     </frameset>
-
-
-   
-
-
+     <frameset rows="50px,*">
+      <frame noresize src="navbar.html" marginheight="15">
+      <frameset cols="20%,*">
+          <frame src="catalog_left.html" frameborder="0" name = "catalog_left">
+          <frame src="catalog_right.html" frameborder="0" name = "catalog_right">
+      </frameset>
+  </frameset>
 </html>
